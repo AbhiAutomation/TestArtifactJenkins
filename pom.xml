@@ -31,6 +31,37 @@
 			<version>7.10.2</version>
 			<scope>test</scope>
 		</dependency>
-
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.2.5</version>
+				<configuration>
+<!--					<systemPropertyVariables>-->
+<!--						<automation.name>${automation.name}</automation.name>-->
+<!--						<browser.name>${browser.name}</browser.name>-->
+<!--						<browser.version>${browser.version}</browser.version>-->
+<!--						<environment>${environment}</environment>-->
+<!--						<platform.name>${platform.name}</platform.name>-->
+<!--						<base.url>${base.url}</base.url>-->
+<!--					</systemPropertyVariables>-->
+<!--					<parallel>methods</parallel>-->
+<!--					<threadCount>5</threadCount>-->
+					<suiteXmlFiles>
+						<suiteXmlFile>${testset}</suiteXmlFile>
+<!--						<suiteXmlFile>testng.xml</suiteXmlFile>-->
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+
+
+		</plugins>
+
+
+	</build>
+
+
 </project>
+
