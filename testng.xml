@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="SelniumGroup.TestArtifact.configurationAnnotation_1"/>
+      <class name="SelniumGroup.TestArtifact.ConfigurationAnnotation_2_ListBox"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
